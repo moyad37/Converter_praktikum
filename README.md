@@ -16,12 +16,12 @@ Now you have to install the `node_modules` Folder for runing this Projekt.
 open the terminal in the root folder
 
 then to be sure, you are in the right folder write `ls` you have to get lick this:
+```
+    d-----        25.05.2023     22:42                client
+    d-----        28.05.2023     19:00                server
+    -a----        28.05.2023     19:14           1889 README.md
 
-d-----        25.05.2023     22:42                client
-d-----        28.05.2023     19:00                server
--a----        28.05.2023     19:14           1889 README.md
-
-
+```
 
 ## Credits
 

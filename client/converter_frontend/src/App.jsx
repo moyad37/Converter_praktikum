@@ -1,5 +1,7 @@
 // React is simply returning a html code
-import { useEffect, useState} from 'react'
+
+//import { useEffect, useState} from 'react'
+import { useState} from 'react'
 import './App.css'
 
 /*
@@ -21,14 +23,17 @@ export class Date extends React.Component {
 function App() {
   const [x, setx] = useState(0)
   const [code, setcode] = useState(0)
+  const [list, setlist] = useState([])
  // const [char, setchar] = useState("")
   //const [num, setnum] = useState("")
-  const [list, setlist] = useState([])
 
+
+  //window refresh
   function refreshPage() {
     window.location.reload(false);
   }
 
+  //database holen 
   function getList() {
     fetch("http://localhost:8080/getList/").then(res => {
       return res.json()
@@ -37,12 +42,14 @@ function App() {
     })
   }
 
+/*
   useEffect( () =>
   {
     getList()
   }, [])
-
+*/
   
+  //Das Result zeigne und im Database hinzufügen
   function getCharacter() {
     fetch("http://localhost:8080/character/"+code).then(res => {
       if(res.status !== 200) {
@@ -59,7 +66,7 @@ function App() {
     })
   }
 
-
+  //Das Result zeigne ohne im Database zu speichern
   function showCharacter() {
     fetch("http://localhost:8080/characterTest/"+code).then(res => {
       if(res.status !== 200) {
@@ -75,6 +82,7 @@ function App() {
     })
   }
 
+  //Data vom Database Löschen
   function removeData() {
     fetch("http://localhost:8080/characterRemove/").then(res => {
       if(res.status !== 200) {
@@ -160,7 +168,5 @@ function App() {
     </>
   )
 }
-
-
 
 export default App

@@ -2,9 +2,9 @@
 
 ## How to run the Application
 
+## 1.
 After cloning the projekt you will have 2 main Folders ;
 
-## 1.
 
 - Client
 - Server
@@ -23,16 +23,21 @@ then to be sure, you are in the right folder write `ls` you have to get lick thi
 
 ```
 
-## Credits
+## 3.
 
-List your collaborators, if any, with links to their GitHub profiles.
+Go into your `server` Folder `cd server` and then write `npm install` to install the `node_modules` Folder.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+## 4. 
 
-If you followed tutorials, include links to those here as well.
+Go into your `client` Folder `cd client/converter_frontend` and then write `npm install` to install the `node_modules` Folder.
 
-## License
+## 5.
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+Now you are ready to run the code, go into `server` and `client/converter_frontend` and run `npm run dev` in both folders.
+
+Then go to Browser und search [http://localhost:5173/](http://localhost:5173/).
 
 ---
+
+you will get this bage ![alt text](../Converter_praktikum/client/converter_frontend/src/Screenshot%202023-05-28%20192650.png)
+

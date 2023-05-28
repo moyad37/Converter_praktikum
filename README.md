@@ -39,5 +39,5 @@ Then go to Browser und search [http://localhost:5173/](http://localhost:5173/).
 
 ---
 
-you will get this bage ![alt text](../Converter_praktikum/client/converter_frontend/src/Screenshot%202023-05-28%20192650.png)
+you will get this bage ![alt text](client/converter_frontend/src/Screenshot%202023-05-28%20192650.png)
 

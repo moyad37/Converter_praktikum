@@ -88,7 +88,7 @@ function App() {
       if(res.status !== 200) {
         //status 200 ist OK
         //95999995 ist die UTF-16 character anzahl
-        alert("Etwas ist ok bei Data löschen vom Database")
+        alert("Etwas ist nicht ok bei Data löschen vom Database")
       }else {
         return res.text()
       }

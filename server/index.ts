@@ -39,7 +39,7 @@ app.get('/character/:code',async(req: Request, res: Response) => {
   //95999995 ist die UTF-16 character anzahl
   if(Number(req.params.code) < 0 || Number(req.params.code) > 95999995)
   {
-    //alert(`geben sie biite nummber zwischen 0 und 95999995  👍 `)
+    //alert(`geben sie bitte nummber zwischen 0 und 95999995  👍 `)
     res.sendStatus(404);
   }else {
     const code = Number(req.params.code);
@@ -76,7 +76,7 @@ app.get('/charactertest/:code',async(req: Request, res: Response) => {
   //95999995 ist die UTF-16 character anzahl
   if(Number(req.params.code) < 0 || Number(req.params.code) > 95999995)
   {
-    //alert(`geben sie biite nummber zwischen 0 und 95999995  👍 `)
+    //alert(`geben sie bitte nummber zwischen 0 und 95999995  👍 `)
     res.sendStatus(404);
   }else {
     const code = Number(req.params.code);
